@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>个人中心</title>
+
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/giraffe-my.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="doc">
+      <div class="navbar navbar-giraffe">
+        <div class="top-bar"></div>
+        <div class="container">
+          <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> 
+          <span class="tit">Giraffe</span>
+        </div>
+        <div class="container clearfix my-main">
+          <ul class="user-info">
+            <li><label>账户</label><%=session.user%></li>
+            <li><label>本月流量</label>0.0G / 100G</li>
+            <li><label>有效期</label>2015年8月30日</li>
+            <li><a type="button" href="/order" class="btn btn-primary btn-fee">续费</a></li>
+          </ul>
+
+          <div class="guide-wrap">
+            <h2>设置</h2>
+            <ul>
+              <li>
+                <a href="#" data-tab="mac" class="icon-link"><i class="iconfont">&#xe708;</i></a>
+                <span class="item-text">Mac</span>
+              </li>
+              <li>
+                <a href="#" data-tab="windows" class="icon-link"><i class="iconfont">&#xe801;</i></a>
+                <span class="item-text">Windows</span>
+              </li>
+              <li>
+                <a href="#" data-tab="ios" class="icon-link"><i class="iconfont">&#xe67d;</i></a>
+                <span class="item-text">IOS</span>
+              </li>
+              <li>
+                <a href="#" data-tab="android" class="icon-link"><i class="iconfont">&#xe636;</i></a>
+                <span class="item-text">Android</span>
+              </li>
+              
+            </ul>
+          </div>
+          <a href="/logout" class="logout-link">登出</a>
+        </div>
+      </div>
+
+      <div class="setting-intro-wrap">
+        <div class="container" data-tab="ios">
+            <h4>Wi-Fi网络 @ IOS设备</h4>
+            <ol>
+              <li>依次进入“设置”->“Wi-Fi”；</li>
+              <li>找到你的无线网络，按右面那个蓝色的箭头进入这个网络的设置界面；</li>
+              <li>滑动到页面底部，在“HTTP代理”一栏中选中“自动”，然后复制以下链接到“URL”中：
+                <input type="text" value="http://pnq.cc/gira"  class="pac" />
+              </li>
+              <li>退出“设置”，完成！</li>
+            </ol>
+
+        </div>
+        <div class="container" data-tab="android">
+          <h4>Android - SmartProxy</h4>
+          <ol>
+            <li>下载和安装SmartProxy</li>
+            <li>启动这个App，点击“配置地址”，选择“手动输入”，输入以下网址并保存：
+              <input type="text" value="http://pnq.cc/gira"  class="pac"/>
+            </li>
+            <li>设置结束，打开软件顶部的开关即可</li>
+          </ol>
+        </div>
+
+        <div class="container" data-tab="mac">
+          <h4>Mac</h4>
+          <ol>
+            <li>首先确认你禁用了各种代理插件。</li>
+            <li>依次进入“设置”->“网络”->“Wi-Fi”（或“以太网”）；</li>
+            <li>点击“高级”->“代理”；</li>
+            <li>选中“自动代理配置”，然后 复制 此地址，并将其 粘贴 在“代理配置文件”一栏： 
+              <input type="text" value="http://pnq.cc/gira"  class="pac"/>
+            </li>
+            <li>点击“好”->“应用”；</li>
+            <li>退出“设置”，结束。</li>
+          </ol>
+        </div>
+
+        <div class="container" data-tab="windows">
+          <h4>Windows</h4>
+          <ol>
+            <li>启动Internet Explorer浏览器</li>
+            <li>依次进入“工具”->“互联网选项”->“连接”；</li>
+            <li>
+              <ul>
+                <li>如果你用当前电脑拨号连接，选中此拨号连接，然后点旁边的“设置”；</li>
+                <li>如果你用路由器，或者你的电脑通过局域网上网，选择“局域网设置”</li>
+              </ul>
+            </li>
+            <li>选中“使用自动配置脚本”，然后 复制 此地址，并将其 粘贴 在“地址”一栏：
+              <input type="text" value="http://pnq.cc/gira"  class="pac"/>
+            </li>
+            <li>一路点击“确定”；</li>
+            <li>退出设置，结束</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-wrap">
+            <div class="icon"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></div>
+            <p>
+            Giraffe是一个通用的网络加速解决方案。它能让你更快更好的浏览和使用全球的网络资源，Giraffe高速稳定、简单易用，并具有缜密的设计和保障。如果你不想整天花时间维护自建服务，不妨试试Giraffe。
+            </p>
+            <p class="copyright">&copy; 2015 giraffe</p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/giraffe-my.js"></script>
+  </body>
+</html>

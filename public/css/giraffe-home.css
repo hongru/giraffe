@@ -1,0 +1,106 @@
+body {
+    background: #607954;
+}
+.jumbotron {
+    background: #C8E1BA;
+    margin-bottom: 0;
+}
+.inner {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.jumbotron h1 {text-align:  center; color: #607954; font-family: Georgia; font-style: italic;}
+.jumbotron p {text-align: center; color: #9BB28D; font-size: 16px; margin-bottom: 40px}
+
+.login-cont {
+    width: 380px;
+    float: left;
+}
+.intro {
+    float: left;
+    width: 400px;
+}
+
+.nav-con {
+    border: 1px solid #ddd;
+    border-top: 0 none;
+    padding: 16px;
+    -webkit-border-radius: 0 0 4px 4px;
+    background: #fff;
+}
+
+.footer {
+    padding: 60px 0;
+    background: #607954;
+    color: #9BB28D;
+    font-size: 14px;
+
+}
+.footer-wrap {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-wrap .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 60px;
+}
+.footer-wrap p {
+    padding-left: 80px;
+}
+.copyright {
+    text-align: center;
+    color: #C8E1BA;
+}
+
+.btn-fee {
+    width: 140px;
+    background: #EE713B;
+    border: 1px solid #EE713B;
+    margin-top: 10px;
+}
+.btn-fee:hover {
+    background: #ff4a00;
+    border:1px solid #ff4a00;
+}
+
+.panel-body {
+    min-height: 350px;
+    position: relative;
+}
+.panel-body p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.panel-body .btn-fee {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+.panel-default {
+    border-color: #9CB18E;
+}
+.panel-default>.panel-heading {
+    background: #607954;
+    border-color: #9CB18E;
+    color: #fff;
+}
+
+.msg {
+    line-height: 1.6;
+    color: #ff4a00;
+    display: block;
+    padding-bottom: 10px;
+}
+.global-tip {
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
