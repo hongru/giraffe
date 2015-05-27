@@ -1,4 +1,4 @@
-###Blog
+###Gira.cc Site
 ====
 
-a blog project build with koa.js
+All mockup pages in `static/`
