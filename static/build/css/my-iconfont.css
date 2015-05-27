@@ -1,0 +1,12 @@
+@font-face{font-family:icon;src:url(../../images/icon/iconfont.eot);src:url(../../images/icon/iconfont.eot?#iefix)format("embedded-opentype"),url(../../images/icon/iconfont.woff)format("woff"),url(../../images/icon/iconfont.ttf)format("truetype"),url(../../images/icon/iconfont.svg#iconfont)format("svg")}
+.iconfont{font-family:icon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}
+.icon-logout:before{content:"\e614"}
+.icon-money:before{content:"\e60d"}
+.icon-aid:before{content:"\e601"}
+.icon-device:before{content:"\f001e"}
+.icon-purchase:before{content:"\e6bc"}
+.icon-flag:before{content:"\e612"}
+.icon-pc:before{content:"\e69d"}
+.icon-app:before{content:"\e608"}
+.icon-password:before{content:"\e6a6"}
+.icon-earth:before{content:"\e6f6"}

@@ -1,0 +1,6 @@
+@font-face{font-family:footericon;src:url(../../images/iconfont/iconfont.eot);src:url(../../images/iconfont/iconfont.eot?#iefix)format("embedded-opentype"),url(../../images/iconfont/iconfont.woff)format("woff"),url(../../images/iconfont/iconfont.ttf)format("truetype"),url(../../images/iconfont/iconfont.svg#iconfont)format("svg")}
+.footericon{font-family:footericon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}
+.icon-rss:before{content:"\e784"}
+.icon-mail:before{content:"\e60e"}
+.icon-github-alt:before{content:"\e6a0"}
+.icon-twitter:before{content:"\e634"}

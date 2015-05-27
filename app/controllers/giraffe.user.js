@@ -1,4 +1,5 @@
 var userModel = require('../models/user');
+var mailController = require('./giraffe.mail');
 
 module.exports = {
     //c=1 用户名或者密码不正确
@@ -25,6 +26,7 @@ module.exports = {
         } else {
             yield userModel.saveUser(data);
             this.redirect('/?k=login&c=0');
+            yield mailController.sendMail(data, data.account);
         }
     },
     logout: function *() {

@@ -1,0 +1,202 @@
+@import 'footer';
+@import 'my-iconfont';
+@import 'side-nav';
+
+
+.blur-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: url(../../images/banner.jpg) 50% 0;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px); 
+}
+
+.doc {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.topbar {
+    padding-top: 20px;
+}
+
+.logo {
+    width: 156px;
+    height: 42px;
+    background: url(../../images/logo.png) no-repeat;
+    float: left;
+    text-indent: -9999px;
+    font-size: 0;
+}
+.login-area {
+    float: right;
+    text-decoration: none;
+    color: #8e8370;
+    font-size: 16px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .iconfont {
+        font-size: 20px;
+        color: #3b83c0;
+        &:hover {
+            color: #e07b53;
+        }
+    }
+    a:hover .iconfont {
+        color: #e07b53;
+    }
+}
+
+.main-con {
+    text-align: left;
+}
+.ui.panel-tit {
+    text-align: left;
+}
+
+.part1 {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.plan-info {
+    float: left;
+    width: 274px;
+}
+.btn-group {
+    float: right;
+    padding-top: 10px;
+    i.iconfont {
+        line-height: 36px !important;
+        font-size: 14px;
+    }
+}
+
+.flow-show {
+    clear: both;
+    position: relative;
+    height: 56px;
+
+    .prev-btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 38px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        background: #cfcfcf;
+        border-radius: 5px 0 0 5px;
+
+        i {
+            color: #797979;
+        }
+    }
+
+    .next-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 38px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        background: #cfcfcf;
+        border-radius: 0 5px 5px 0;
+
+        i {
+            color: #797979;
+        }
+    }
+
+    .gallery-wrap {
+        width: 600px;
+        height: 56px;
+        overflow: hidden;
+        position: absolute;
+        left: 43px;
+        top: 0;
+    }
+
+    .data-cell-list {
+        margin: 0;
+        padding: 0;
+        width: 1000px;
+        height: 56px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        list-style: none;
+        li {
+            float: left;
+            list-style: none;
+            width: 149px;
+            margin-right: 1px;
+            height: 56px;
+            background: #eee;
+
+            .data-cell {
+                height: 40px;
+            }
+            .device-cell {
+                height: 16px;
+                background: #ddd;
+            }
+
+            &.available {
+                .data-cell {
+                    position: relative;
+                    background: #89cd88;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 18px;
+                    .used-cell {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 0;
+                        height: 40px;
+                        background: #449c43;
+                    }
+                    .data-text {
+                        position: absolute;
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        left: 0;
+                        top: 0;
+                        text-align: center;
+                        z-index: 1;
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                }
+                .device-cell {
+                    background: #ffd665;
+                    font-size: 10px;
+                    text-align: center;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+.plan-detail {
+    min-height: 534px;
+}

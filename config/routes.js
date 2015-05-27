@@ -11,7 +11,6 @@ exports.init = function(app) {
     app.get('/my', GiraffeMyController.renderMy);
     app.get('/order', GiraffeOrderController.renderOrder);
     app.get('/logout', GiraffeUserController.logout);
-    //app.post('/mailtest', GiraffeMailController.sendTest);
     
     app.post('/user/login', GiraffeUserController.login);
     app.post('/user/register', GiraffeUserController.register);

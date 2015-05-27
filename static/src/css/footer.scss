@@ -1,0 +1,74 @@
+@import 'footericon';
+
+.footer {
+    position: relative;
+    height: 460px;
+    padding-top: 60px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+
+    h6 {
+        font-size: 0;
+        text-indent: -9999px;
+        height: 86px;
+        background: url(../../images/gira-tit.png) no-repeat 50% 50%; 
+    }
+
+    .info {
+        width: 650px;
+        margin: 0 auto;
+        padding: 10px 0 16px 0;
+        line-height: 2;
+        font-size: 16px;
+        color: #bdbdbd;
+    }
+
+    .links-wrap {
+        padding-top: 30px;
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color: rgba(0,0,0,.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background: #f8f7f4;
+            display: inline-block;
+            text-align: center;
+            line-height: 44px;
+            margin: 0 18px;
+
+            &:hover i {
+                color: #eebd63;
+            }
+
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .ft-info {
+        position: absolute;
+        bottom: 60px;
+        width: 960px;
+        left: 50%;
+        margin-left: -480px;
+        font-size: 12px;
+
+        a {
+            color: #9e9370;
+        }
+
+        .copyright {
+            float: left;
+            color: #aaa;
+        }
+        .more-links {
+            float: right;
+            a {
+                margin-left: 20px;
+            }
+        }
+    }
+}

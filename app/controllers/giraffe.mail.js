@@ -2,13 +2,14 @@ var nodemailer = require('nodemailer');
  
 
 
-function sendMailTest () {
+function sendMailTest (user, tomail) {
+    if (!tomail.forEach) tomail = [tomail];
     // create reusable transporter object using SMTP transport 
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'qq',
         auth: {
-            user: 'hongru.chenhr@gmail.com',
-            pass: 'Chr19890421'
+            user: 'hongru.chenhr@qq.com',
+            pass: 'chr19890421'
         }
     });
      
@@ -16,12 +17,13 @@ function sendMailTest () {
     // the same transporter object for all e-mails 
      
     // setup e-mail data with unicode symbols 
+    console.log(user, tomail);
     var mailOptions = {
-        from: 'Hongru Chen ✔ <hongru.chenhr@gmail.com>', // sender address 
-        to: 'hongru.chenhr@gmail.com, hongru.chenhr@qq.com', // list of receivers 
-        subject: 'Hello ✔', // Subject line 
-        text: 'Hello world ✔', // plaintext body 
-        html: '<b>Hello world ✔</b>' // html body 
+        from: 'Giraffe ✔ <hongru.chenhr@qq.com>', // sender address 
+        to: tomail.join(', '), // list of receivers 
+        subject: 'Hello From Giraffe ✔', // Subject line 
+        text: 'Hello, 这是来自Giraffe的测试邮件。您的Giraffe账号为'+user.account+', \n您的密码为 '+user.password+'。\n请牢记您的用户名密码。 ✔', // plaintext body 
+        html: '<p>Hello, 这是来自Giraffe的测试邮件。您的Giraffe账号为'+user.account+', \n您的密码为 '+user.password+'。\n请牢记您的用户名密码。 ✔</p>' // html body 
     };
      
     // send mail with defined transport object 
@@ -32,12 +34,10 @@ function sendMailTest () {
             console.log('Message sent: ' + info.response);
         }
     });
-    console.log('send end ...')
 }
 
 module.exports = {
-    sendTest: function *() {
-        console.log('mail ...');
-        //sendMailTest();
+    sendMail: function *(user, tomail) {
+        sendMailTest(user, tomail);
     }
 }

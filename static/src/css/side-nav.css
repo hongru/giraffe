@@ -1,0 +1,12 @@
+.mypac-wrap {
+  margin-bottom: 20px; }
+
+.ui.segment a {
+  color: #a9a08f; }
+  .ui.segment a:hover {
+    color: #606060; }
+
+.side-nav .ui.segment {
+  padding: 0.7em; }
+.side-nav .ui.sidenav-tit {
+  padding: 0.8em; }

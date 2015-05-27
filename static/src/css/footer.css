@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "footericon";
+  src: url("../../images/iconfont/iconfont.eot");
+  /* IE9*/
+  src: url("../../images/iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../../images/iconfont/iconfont.woff") format("woff"), url("../../images/iconfont/iconfont.ttf") format("truetype"), url("../../images/iconfont/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.footericon {
+  font-family: "footericon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-rss:before {
+  content: "\e784"; }
+
+.icon-mail:before {
+  content: "\e60e"; }
+
+.icon-github-alt:before {
+  content: "\e6a0"; }
+
+.icon-twitter:before {
+  content: "\e634"; }
+
+.footer {
+  position: relative;
+  height: 460px;
+  padding-top: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center; }
+  .footer h6 {
+    font-size: 0;
+    text-indent: -9999px;
+    height: 86px;
+    background: url(../../images/gira-tit.png) no-repeat 50% 50%; }
+  .footer .info {
+    width: 650px;
+    margin: 0 auto;
+    padding: 10px 0 16px 0;
+    line-height: 2;
+    font-size: 16px;
+    color: #bdbdbd; }
+  .footer .links-wrap {
+    padding-top: 30px; }
+    .footer .links-wrap a {
+      text-decoration: none;
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.5);
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background: #f8f7f4;
+      display: inline-block;
+      text-align: center;
+      line-height: 44px;
+      margin: 0 18px; }
+      .footer .links-wrap a:hover i {
+        color: #eebd63; }
+      .footer .links-wrap a i {
+        font-size: 30px; }
+  .footer .ft-info {
+    position: absolute;
+    bottom: 60px;
+    width: 960px;
+    left: 50%;
+    margin-left: -480px;
+    font-size: 12px; }
+    .footer .ft-info a {
+      color: #9e9370; }
+    .footer .ft-info .copyright {
+      float: left;
+      color: #aaa; }
+    .footer .ft-info .more-links {
+      float: right; }
+      .footer .ft-info .more-links a {
+        margin-left: 20px; }
