@@ -1,6 +1,7 @@
-@import 'footer';
+@import 'small-footer';
 @import 'my-iconfont';
 @import 'side-nav';
+@import 'jquery-range';
 
 
 .blur-bg {
@@ -75,11 +76,17 @@
 }
 .plan-info {
     float: left;
-    width: 274px;
+    width: 530px;
 }
 .btn-group {
+    width: 138px;
     float: right;
-    padding-top: 10px;
+
+    a.ui.button {
+        display: block;
+        margin-bottom: 12px;
+    }
+
     i.iconfont {
         line-height: 36px !important;
         font-size: 14px;
@@ -102,6 +109,10 @@
         background: #cfcfcf;
         border-radius: 5px 0 0 5px;
 
+        &.disable {
+            background: #e7e7e7;
+        }
+
         i {
             color: #797979;
         }
@@ -117,6 +128,10 @@
         text-align: center;
         background: #cfcfcf;
         border-radius: 0 5px 5px 0;
+
+        &.disable {
+            background: #e7e7e7;
+        }
 
         i {
             color: #797979;
@@ -135,7 +150,7 @@
     .data-cell-list {
         margin: 0;
         padding: 0;
-        width: 1000px;
+        width: 9999px;
         height: 56px;
         position: absolute;
         left: 0;
@@ -195,8 +210,72 @@
             }
         }
     }
+
+    .flow-date {
+        position: absolute;
+        width: 60;
+        height: 16;
+        text-align: center;
+        font-size: 10px;
+        color: #999;
+    }
 }
 
 .plan-detail {
     min-height: 534px;
+}
+
+// first-order
+.firstorder {
+    .plan-block {
+        overflow: hidden;
+        background: #f7f7f7;
+        margin-bottom: 14px;
+
+        border-radius: 0 4px 4px 0;
+        -webkit-border-radius: 0 4px 4px 0;
+
+        h4 {
+            float: left;
+            width: 36px;
+            padding: 24px 0;
+            background: #d7d7d7;
+            text-align: center;
+            line-height: 36px;
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+
+            writing-mode: vertical-lr;
+            -webkit-writing-mode: vertical-lr;
+
+            border-radius: 4px 0 0 4px;
+            -webkit-border-radius: 4px 0 0 4px;
+
+        }
+    }
+
+    .plan-sel {
+        .block-con {
+            padding-top: 20px;
+            padding-left: 20px;
+            .ui.button {
+                background: #fff;
+                margin-right: 10px;
+                border: 1px solid #ddd;
+
+                &.selected {
+                    background: #8e836f;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .block-con {
+        margin-left: 38px;
+    }
+    .slider-container {
+        margin: 70px auto 0 auto;
+    }
 }

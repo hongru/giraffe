@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-        <title>我的Gira</title>
+        <title>购买</title>
 
         <link rel="stylesheet" href="build/semantic/semantic.min.css" />
         <link rel="stylesheet" href="build/css/my.css" />
@@ -15,7 +15,7 @@
 
         <div class="blur-bg"></div>
         
-        <div class="doc">
+        <div class="doc firstorder">
 
             <div class="ui grid">
                 <div class="one column row">
@@ -35,66 +35,40 @@
 
                 <div class="row main-con">
                     <div class="twelve wide column">
-                        <div class="ui top attached button panel-tit">当前套餐信息</div>
+                        <div class="ui top attached button panel-tit">订购</div>
                         <div class="ui attached segment plan-detail">
-                            <!-- 套餐信息开始 -->
-                            <div class="part1">
-                                <div class="plan-info">
-                                    <p><strong>套餐：</strong>“10G基础版”月付 + “40季标准版”季付</p>
-                                    <p><strong>到期时间：</strong> 2015.7.34 15:50:35</p>
-                                </div>
-                                <div class="btn-group">
-
-                                    <a href="#" class="ui labeled icon button">
-                                      <i class="xufei icon iconfont">&#xe60d;</i>
-                                      续费
+                            <div class="plan-block plan-sel">
+                                <h4>套餐</h4>
+                                <div class="block-con">
+                                    <a href="#" class="ui button">
+                                      10G基础版
                                     </a>
-                                    <a href="#" class="ui labeled icon button">
-                                      <i class="liuliang icon iconfont">&#xe601;</i>
-                                      增加流量
+                                    <a href="#" class="ui button selected">
+                                      40G标准版
                                     </a>
-                                    <a href="#" class="ui labeled icon button">
-                                      <i class="shebei icon iconfont">&#xf001e;</i>
-                                      增加设备
+                                    <a href="#" class="ui button">
+                                      100G高端版
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="flow-show">
-                                <a href="#" class="prev-btn">
-                                    <i class="left chevron icon"></i>
-                                </a>
-                                <div class="gallery-wrap" data-source='[{"fromDate":"2015-3-4","endDate":"2015-4-4","deviceNum":"4","totalData":"10G","usedData":"4.435G"},{"fromDate":"2015-4-4","endDate":"2015-5-4","deviceNum":"40","totalData":"40G","usedData":"0"},{"fromDate":"2015-4-4","endDate":"2015-5-4","deviceNum":"40","totalData":"40G","usedData":"0"},{"fromDate":"2015-4-4","endDate":"2015-5-4","deviceNum":"40","totalData":"40G","usedData":"0"},{"fromDate":"2015-4-4","endDate":"2015-5-4","deviceNum":"40","totalData":"40G","usedData":"0"}]'>
-                                    <ul class="data-cell-list">
-                                        <!-- 根据数据动态生成
-                                        <li>
-                                            <div class="data-cell"></div>
-                                            <div class="device-cell"></div>
-                                        </li>
-                                        <li>
-                                            <div class="data-cell"></div>
-                                            <div class="device-cell"></div>
-                                        </li>
-                                        <li>
-                                            <div class="data-cell"></div>
-                                            <div class="device-cell"></div>
-                                        </li>
-                                        <li>
-                                            <div class="data-cell"></div>
-                                            <div class="device-cell"></div>
-                                        </li>
-                                        -->
-                                    </ul>
+                            <div class="plan-block data-sel">
+                                <h4>每30天流量</h4>
+                                <div class="block-con">
+                                    <input type="hidden" class="data-slider" value="40" />
                                 </div>
-                                <a href="#" class="next-btn">
-                                    <i class="right chevron icon"></i>
-                                </a>
                             </div>
 
-                            <!-- 套餐信息结束 -->
+                            <div class="plan-block device-sel">
+                                <h4>同时在线设备数</h4>
+                                <div class="block-con">
+                                    <input type="hidden" class="device-slider" value="8" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="four wide column sticky">
+                        <!--
                         <div class="mypac-wrap">
                             <div class="ui top attached button panel-tit">我的Pac</div>
                             <div class="ui attached segment mypac">
@@ -105,6 +79,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 
                         <div class="side-nav">
                             <div class="ui segments">
@@ -167,6 +142,7 @@
 
         <script type="text/javascript" src="build/js/jquery.js"></script>
         <script type="text/javascript" src="build/semantic/semantic.min.js"></script>
-        <script type="text/javascript" src="build/js/my.js"></script>
+        <script type="text/javascript" src="build/js/jquery.range.js"></script>
+        <script type="text/javascript" src="build/js/firstorder.js"></script>
     </body>
 </html>
